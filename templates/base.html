@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grand Azure Hotel</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<nav>
+  <a href="/" class="logo">★ Grand Azure</a>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/rooms">Rooms</a></li>
+    <li><a href="/booking">Book Now</a></li>
+    <li><a href="/contact">Contact</a></li>
+  </ul>
+</nav>
+
+{% block content %}{% endblock %}
+
+<footer>
+  <p>© 2025 Grand Azure Hotel. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
